@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  RESTful Skelton
 //
-//  Created by gomathi saminathan on 12/26/19.
+//  Created by Rajendran Eshwaran on 12/26/19.
 //  Copyright © 2019 Rajendran Eshwaran. All rights reserved.
 //
 
@@ -22,11 +22,9 @@ class ViewController: UIViewController {
             switch(result){
             case .success(let success):
                 self?.openWeatherDetail = [success]
-                
                 print(" open weather current pressure: \(success.main.pressure)")
                 print(" open weather current humidity: \(success.main.humidity)")
                 print(" open weather current temperature: \(success.main.temp)")
-                
                 break
             case .failure(let failure):
                 print(failure)
