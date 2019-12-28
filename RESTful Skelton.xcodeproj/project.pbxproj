@@ -13,6 +13,8 @@
 		978BE66823B57BDE001B19C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 978BE66623B57BDE001B19C9 /* Main.storyboard */; };
 		978BE66A23B57BE0001B19C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 978BE66923B57BE0001B19C9 /* Assets.xcassets */; };
 		978BE66D23B57BE0001B19C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 978BE66B23B57BE0001B19C9 /* LaunchScreen.storyboard */; };
+		978BE67623B595C1001B19C9 /* OpenWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978BE67523B595C1001B19C9 /* OpenWeatherModel.swift */; };
+		978BE67823B59CAF001B19C9 /* OpenWeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978BE67723B59CAF001B19C9 /* OpenWeatherService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		978BE66923B57BE0001B19C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		978BE66C23B57BE0001B19C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		978BE66E23B57BE0001B19C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		978BE67523B595C1001B19C9 /* OpenWeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherModel.swift; sourceTree = "<group>"; };
+		978BE67723B59CAF001B19C9 /* OpenWeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		978BE65F23B57BDE001B19C9 /* RESTful Skelton */ = {
 			isa = PBXGroup;
 			children = (
+				978BE67423B59552001B19C9 /* OpenWeatherAPI */,
 				978BE66023B57BDE001B19C9 /* AppDelegate.swift */,
 				978BE66223B57BDE001B19C9 /* SceneDelegate.swift */,
 				978BE66423B57BDE001B19C9 /* ViewController.swift */,
@@ -65,6 +70,15 @@
 				978BE66E23B57BE0001B19C9 /* Info.plist */,
 			);
 			path = "RESTful Skelton";
+			sourceTree = "<group>";
+		};
+		978BE67423B59552001B19C9 /* OpenWeatherAPI */ = {
+			isa = PBXGroup;
+			children = (
+				978BE67523B595C1001B19C9 /* OpenWeatherModel.swift */,
+				978BE67723B59CAF001B19C9 /* OpenWeatherService.swift */,
+			);
+			path = OpenWeatherAPI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +152,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				978BE67623B595C1001B19C9 /* OpenWeatherModel.swift in Sources */,
 				978BE66523B57BDE001B19C9 /* ViewController.swift in Sources */,
+				978BE67823B59CAF001B19C9 /* OpenWeatherService.swift in Sources */,
 				978BE66123B57BDE001B19C9 /* AppDelegate.swift in Sources */,
 				978BE66323B57BDE001B19C9 /* SceneDelegate.swift in Sources */,
 			);
