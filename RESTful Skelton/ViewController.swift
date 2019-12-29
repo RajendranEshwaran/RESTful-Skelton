@@ -11,14 +11,17 @@ import UIKit
 class ViewController: UIViewController {
 
     var openWeatherDetail :[CurrentLocalWeather] = []
+    let openweatherObject = OpenWeatherService()
+
+    var daryWeatherDetail : [DarkSkyWeather] = []
+    let darkskyservice = DarkSkyService()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        let openweatherObject = OpenWeatherService()
         
-        openweatherObject.OpenWeatherCurrentDataFetch(lat: 35.0, lon: 139.0){[weak self] result in
+      /*  openweatherObject.OpenWeatherCurrentDataFetch(lat: 35.0, lon: 139.0){[weak self] result in
             switch(result){
             case .success(let success):
                 self?.openWeatherDetail = [success]
@@ -32,6 +35,22 @@ class ViewController: UIViewController {
             default:
                 print("UnSupported Functionality")
             }
+        }*/
+        
+        
+        
+        darkskyservice.DarkSkyWeatherDataFetch(lat: 37.8267, lon: -122.4233){ [weak self] result in
+            
+            switch(result){
+            case .success(let success):
+                self?.daryWeatherDetail = [success]
+                print(success.hourly)
+                break
+            case .failure(let failure):
+                print(failure)
+                break
+            }
+            
         }
         
     }
