@@ -16,6 +16,9 @@ class ViewController: UIViewController {
     var daryWeatherDetail : [DarkSkyWeather] = []
     let darkskyservice = DarkSkyService()
     
+    var omdbDetail : [OMDBData] = []
+    let omdbservice = OmdbSerivce()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -39,7 +42,7 @@ class ViewController: UIViewController {
         
         
         
-        darkskyservice.DarkSkyWeatherDataFetch(lat: 37.8267, lon: -122.4233){ [weak self] result in
+       /* darkskyservice.DarkSkyWeatherDataFetch(lat: 37.8267, lon: -122.4233){ [weak self] result in
             
             switch(result){
             case .success(let success):
@@ -51,6 +54,20 @@ class ViewController: UIViewController {
                 break
             }
             
+        }*/
+        
+        let url = "http://www.omdbapi.com/?i=tt3896198&apikey=f0b76fe9"
+        omdbservice.FetchomdbMovieData(withUrl: url){[weak self ]result in
+            
+            switch(result){
+            case .success(let success):
+                self?.omdbDetail = [success]
+                print(success)
+                break
+            case .failure(let failure):
+                print(failure)
+                break
+            }
         }
         
     }

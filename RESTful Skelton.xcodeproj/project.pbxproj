@@ -17,6 +17,8 @@
 		978BE67823B59CAF001B19C9 /* OpenWeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978BE67723B59CAF001B19C9 /* OpenWeatherService.swift */; };
 		978BE67B23B705CC001B19C9 /* DarkSkyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978BE67A23B705CC001B19C9 /* DarkSkyModel.swift */; };
 		978BE67D23B705E7001B19C9 /* DarkSkyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978BE67C23B705E7001B19C9 /* DarkSkyService.swift */; };
+		97AC464823BA513D005EEC96 /* omdbModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AC464723BA513D005EEC96 /* omdbModel.swift */; };
+		97AC464A23BA515F005EEC96 /* OmdbService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97AC464923BA515F005EEC96 /* OmdbService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,9 @@
 		978BE67723B59CAF001B19C9 /* OpenWeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherService.swift; sourceTree = "<group>"; };
 		978BE67A23B705CC001B19C9 /* DarkSkyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkSkyModel.swift; sourceTree = "<group>"; };
 		978BE67C23B705E7001B19C9 /* DarkSkyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkSkyService.swift; sourceTree = "<group>"; };
+		97AC464723BA513D005EEC96 /* omdbModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = omdbModel.swift; sourceTree = "<group>"; };
+		97AC464923BA515F005EEC96 /* OmdbService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmdbService.swift; sourceTree = "<group>"; };
+		97AC464B23BA9B41005EEC96 /* RESTful Skelton.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "RESTful Skelton.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +69,8 @@
 		978BE65F23B57BDE001B19C9 /* RESTful Skelton */ = {
 			isa = PBXGroup;
 			children = (
+				97AC464B23BA9B41005EEC96 /* RESTful Skelton.entitlements */,
+				97AC464623BA5109005EEC96 /* OMBP API */,
 				978BE67923B7058E001B19C9 /* DarkSkyAPI */,
 				978BE67423B59552001B19C9 /* OpenWeatherAPI */,
 				978BE66023B57BDE001B19C9 /* AppDelegate.swift */,
@@ -93,6 +100,15 @@
 				978BE67C23B705E7001B19C9 /* DarkSkyService.swift */,
 			);
 			path = DarkSkyAPI;
+			sourceTree = "<group>";
+		};
+		97AC464623BA5109005EEC96 /* OMBP API */ = {
+			isa = PBXGroup;
+			children = (
+				97AC464723BA513D005EEC96 /* omdbModel.swift */,
+				97AC464923BA515F005EEC96 /* OmdbService.swift */,
+			);
+			path = "OMBP API";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,7 +187,9 @@
 				978BE66523B57BDE001B19C9 /* ViewController.swift in Sources */,
 				978BE67823B59CAF001B19C9 /* OpenWeatherService.swift in Sources */,
 				978BE67B23B705CC001B19C9 /* DarkSkyModel.swift in Sources */,
+				97AC464823BA513D005EEC96 /* omdbModel.swift in Sources */,
 				978BE66123B57BDE001B19C9 /* AppDelegate.swift in Sources */,
+				97AC464A23BA515F005EEC96 /* OmdbService.swift in Sources */,
 				978BE66323B57BDE001B19C9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,6 +334,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "RESTful Skelton/RESTful Skelton.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "RESTful Skelton/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -333,6 +352,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "RESTful Skelton/RESTful Skelton.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "RESTful Skelton/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
