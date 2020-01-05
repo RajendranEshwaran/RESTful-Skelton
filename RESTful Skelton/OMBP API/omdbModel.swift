@@ -45,7 +45,7 @@ struct ratings
 extension OMDBData : Decodable{
     
     enum CodingKeys: String , CodingKey {
-        case Title  ,Rated ,Released ,Genre , Director , Writer , Actors , Plot , Language , Country , Awards , Poster , Metascore = "Metascore" , imdbRating = "imdbRating" , imdbVotes ,imdbID , type = "Type" ,DVD , BoxOffice, Production , Website ,Response //,Ratings
+        case Title  ,Rated ,Released ,Genre , Director , Writer , Actors , Plot , Year ,Language , Country , Awards , Poster , Metascore = "Metascore" , imdbRating = "imdbRating" , imdbVotes ,imdbID , type = "Type" ,DVD , BoxOffice, Production , Website ,Response //,Ratings
     }
     
 //    enum RatingKeys : String , CodingKey {

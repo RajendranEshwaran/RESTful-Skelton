@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9723087A23C248A300C86361 /* CurrentNewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9723087923C248A300C86361 /* CurrentNewsModel.swift */; };
+		9723087C23C248B600C86361 /* CurrentNewsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9723087B23C248B600C86361 /* CurrentNewsService.swift */; };
 		978BE66123B57BDE001B19C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978BE66023B57BDE001B19C9 /* AppDelegate.swift */; };
 		978BE66323B57BDE001B19C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978BE66223B57BDE001B19C9 /* SceneDelegate.swift */; };
 		978BE66523B57BDE001B19C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978BE66423B57BDE001B19C9 /* ViewController.swift */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9723087923C248A300C86361 /* CurrentNewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentNewsModel.swift; sourceTree = "<group>"; };
+		9723087B23C248B600C86361 /* CurrentNewsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentNewsService.swift; sourceTree = "<group>"; };
 		978BE65D23B57BDE001B19C9 /* RESTful Skelton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RESTful Skelton.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		978BE66023B57BDE001B19C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		978BE66223B57BDE001B19C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +54,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9723087823C2487B00C86361 /* CurrentNewsAPI */ = {
+			isa = PBXGroup;
+			children = (
+				9723087923C248A300C86361 /* CurrentNewsModel.swift */,
+				9723087B23C248B600C86361 /* CurrentNewsService.swift */,
+			);
+			path = CurrentNewsAPI;
+			sourceTree = "<group>";
+		};
 		978BE65423B57BDD001B19C9 = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +82,7 @@
 		978BE65F23B57BDE001B19C9 /* RESTful Skelton */ = {
 			isa = PBXGroup;
 			children = (
+				9723087823C2487B00C86361 /* CurrentNewsAPI */,
 				97AC464B23BA9B41005EEC96 /* RESTful Skelton.entitlements */,
 				97AC464623BA5109005EEC96 /* OMBP API */,
 				978BE67923B7058E001B19C9 /* DarkSkyAPI */,
@@ -184,8 +198,10 @@
 			files = (
 				978BE67623B595C1001B19C9 /* OpenWeatherModel.swift in Sources */,
 				978BE67D23B705E7001B19C9 /* DarkSkyService.swift in Sources */,
+				9723087A23C248A300C86361 /* CurrentNewsModel.swift in Sources */,
 				978BE66523B57BDE001B19C9 /* ViewController.swift in Sources */,
 				978BE67823B59CAF001B19C9 /* OpenWeatherService.swift in Sources */,
+				9723087C23C248B600C86361 /* CurrentNewsService.swift in Sources */,
 				978BE67B23B705CC001B19C9 /* DarkSkyModel.swift in Sources */,
 				97AC464823BA513D005EEC96 /* omdbModel.swift in Sources */,
 				978BE66123B57BDE001B19C9 /* AppDelegate.swift in Sources */,

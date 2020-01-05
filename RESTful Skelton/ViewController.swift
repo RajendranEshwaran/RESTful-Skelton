@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+ 
+    
 
     var openWeatherDetail :[CurrentLocalWeather] = []
     let openweatherObject = OpenWeatherService()
@@ -18,6 +20,10 @@ class ViewController: UIViewController {
     
     var omdbDetail : [OMDBData] = []
     let omdbservice = OmdbSerivce()
+    
+    var currentNews : [CurrentNews] = []
+    let currentservice = CurrentNewsService()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,7 +62,7 @@ class ViewController: UIViewController {
             
         }*/
         
-        let url = "http://www.omdbapi.com/?i=tt3896198&apikey=f0b76fe9"
+        /*let url = "http://www.omdbapi.com/?i=tt3896198&apikey=f0b76fe9"
         omdbservice.FetchomdbMovieData(withUrl: url){[weak self ]result in
             
             switch(result){
@@ -68,10 +74,27 @@ class ViewController: UIViewController {
                 print(failure)
                 break
             }
+        }*/
+        
+    
+        
+        currentservice.CurrentNewsFetch(completion: ) {[weak self ] result in
+            
+            switch(result)
+            {
+            case .success(let success):
+                self?.currentNews = [success]
+                print(self?.currentNews ?? [])
+                break
+            case . failure(let failure):
+                print(failure)
+                break
+            }
         }
         
     }
 
+    
 
 }
 
